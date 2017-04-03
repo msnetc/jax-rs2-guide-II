@@ -8,8 +8,12 @@ import javax.ws.rs.ApplicationPath;
 @ApplicationPath("/api/*")
 public class JsonResourceConfig extends ResourceConfig {
     public JsonResourceConfig() {
-        register(BookResource.class);
+
+        //3rd party packages
         register(JacksonFeature.class);
         register(JsonContextProvider.class);
+
+        //this project classes
+        register(BookResource.class);
     }
 }

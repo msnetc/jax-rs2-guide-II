@@ -1,6 +1,6 @@
-package com.example.resource;
+package cn.mobilemd;
 
-import com.example.jackson.JsonHybridBook;
+
 import com.fasterxml.jackson.databind.AnnotationIntrospector;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -44,10 +44,11 @@ public class JsonContextProvider implements ContextResolver<ObjectMapper> {
     @Override
     public ObjectMapper getContext(Class<?> type) {
         //关注点2：判断POJO类型返回相应的ObjectMapper实例
-        if (type == JsonHybridBook.class) {
-            return c;
-        } else {
-            return d;
+//        if (type == JsonHybridBook.class) {
+//            return c;
+//        } else {
+//            return d;
+        return d;
         }
+
     }
-}
