@@ -14,7 +14,7 @@ public class BookResource {
 
     @Path("/book")
     @GET
-    public BookDto getNoJaxbBook() {
+    public BookDto getBook() {
         final BookDto book = new BookDto();
         BookResource.LOGGER.debug(book);
         return book;
