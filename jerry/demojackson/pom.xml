@@ -23,6 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<guava.version>17.0</guava.version>
+		<log4j.version>1.2.16</log4j.version>
 	</properties>
 
 	<dependencies>
@@ -43,6 +44,16 @@
 			<artifactId>jersey-media-json-jackson</artifactId>
 		</dependency>
 		<!--使用jackson处理json 结束-->
+
+		<!-- log -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+			<!--<scope>runtime</scope> -->
+		</dependency>
+
+
 
 		<dependency>
 			<groupId>com.google.guava</groupId>
